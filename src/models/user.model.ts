@@ -16,3 +16,7 @@ export class RegisterDTO extends LoginDTO {
   @IsNotEmpty()
   readonly username: string;
 }
+
+export interface AuthPayload {
+  username: string;
+}
